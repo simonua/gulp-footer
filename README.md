@@ -1,4 +1,4 @@
-gulp-footer
+gulp-footer v0.4
 ===========
 
 Gulp extension to add a footer to file(s) in the pipeline
