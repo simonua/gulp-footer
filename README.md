@@ -9,16 +9,16 @@ Structure
 ---------
 
 * `footer` = function([footerText], [options])
-    * `footerText` string optional
-      * The text to use for the footer to be prepended to the files in the stream.
-      * Will be formatted against the markdown processor, and passed an options object with the following fields added
-        * `filename` - the name of the file being added
-        * `now` - ISO-8601 formatted datetime
-        * `year` - the current year
-    * `options` object optional
-      * `file` string optional
-        * a file to use for the footerText, if footerText isn't specified
-      * other parameters will be passed through to the markdown processor against `footerText` 
+  * `footerText` string optional
+    * The text to use for the footer to be prepended to the files in the stream.
+    * Will be formatted against the markdown processor, and passed an options object with the following fields added
+      * `filename` - the name of the file being added
+      * `now` - ISO-8601 formatted datetime
+      * `year` - the current year
+  * `options` object optional
+    * `file` string optional
+      * a file to use for the footerText, if footerText isn't specified
+    * other parameters will be passed through to the markdown processor against `footerText`
 
 Example
 -------
