@@ -1,6 +1,8 @@
 gulp-footer
 ===========
 
+[![Build Status](https://travis-ci.org/godaddy/gulp-footer.png)](https://travis-ci.org/godaddy/gulp-footer)
+
 Gulp extension to add a footer to file(s) in the pipeline
 
     var footer = require('gulp-footer');
