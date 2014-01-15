@@ -1,26 +1,26 @@
-# gulp-header [![NPM version](https://badge.fury.io/js/gulp-header.png)](http://badge.fury.io/js/gulp-header) [![Build Status](https://travis-ci.org/godaddy/gulp-header.png)](https://travis-ci.org/godaddy/gulp-header)
+# gulp-footer [![NPM version](https://badge.fury.io/js/gulp-footer.png)](http://badge.fury.io/js/gulp-footer) [![Build Status](https://travis-ci.org/godaddy/gulp-footer.png)](https://travis-ci.org/godaddy/gulp-footer)
 
-Gulp extension to add a header to file(s) in the pipeline
+Gulp extension to add a footer to file(s) in the pipeline
 
 ```javascript
-var header = require('gulp-header');
+var footer = require('gulp-footer');
 ```
 
 ## Usage
 
 ```javascript
-var header = require('gulp-header');
+var footer = require('gulp-footer');
 
 gulp.src('./foo/*.js')
-  .pipe(header('Hello'))
+  .pipe(footer('Hello'))
   .pipe(gulp.dest('./dist/')
 
 gulp.src('./foo/*.js')
-  .pipe(header('Hello <%= name %>\n', { name : 'World'} ))
+  .pipe(footer('Hello <%= name %>\n', { name : 'World'} ))
   .pipe(gulp.dest('./dist/')
 
 gulp.src('./foo/*.js')
-  .pipe(header('Hello ${name}\n', { name : 'World'} ))
+  .pipe(footer('Hello ${name}\n', { name : 'World'} ))
   .pipe(gulp.dest('./dist/')
 
 
@@ -37,17 +37,17 @@ var banner = ['/**',
   ''].join('\n');
 
 gulp.src('./foo/*.js')
-  .pipe(header(banner, { pkg : pkg } ))
+  .pipe(footer(banner, { pkg : pkg } ))
   .pipe(gulp.dest('./dist/')
 
 gulp.src('./foo/*.js')
-  .pipe(header.fromFile('banner.js', { pkg : pkg } ))
+  .pipe(footer.fromFile('banner.js', { pkg : pkg } ))
   .pipe(gulp.dest('./dist/')
 ```
 
 ## API
 
-### header(text, data)
+### footer(text, data)
 
 #### text
 
@@ -65,7 +65,7 @@ Default: `{}`
 The data object used to populate the text.
 
 
-### header.fromFile(filePath, data)
+### footer.fromFile(filePath, data)
 
 #### filePath
 

@@ -16,7 +16,7 @@
     "url": "git://github.com/godaddy/gulp-footer.git"
   },
   "keywords": [
-    "header",
+    "footer",
     "gulpplugin",
     "eventstream"
   ],
