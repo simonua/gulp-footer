@@ -63,20 +63,3 @@ Type: `Object`
 Default: `{}`  
 
 The data object used to populate the text.
-
-
-### footer.fromFile(filePath, data)
-
-#### filePath
-
-Type: `String`  
-
-The path of the template file.
-
-
-#### data
-
-Type: `Object`  
-Default: `{}`  
-
-The data object used to populate the text.
