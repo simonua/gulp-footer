@@ -1,6 +1,6 @@
 # gulp-footer [![NPM version](https://badge.fury.io/js/gulp-footer.png)](http://badge.fury.io/js/gulp-footer) [![Build Status](https://travis-ci.org/godaddy/gulp-footer.png)](https://travis-ci.org/godaddy/gulp-footer)
 
-Gulp extension to add a footer to file(s) in the pipeline
+gulp-footer is a Gulp extension to add a footer to file(s) in the pipeline.  [Gulp is a streaming build system](https://github.com/gulpjs/gulp) utilizing [node.js](http://nodejs.org/).
 
 ```javascript
 var footer = require('gulp-footer');
