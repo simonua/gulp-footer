@@ -6,6 +6,26 @@ gulp-footer is a Gulp extension to add a footer to file(s) in the pipeline.  [Gu
 var footer = require('gulp-footer');
 ```
 
+## API
+
+### footer(text, data)
+
+#### text
+
+Type: `String`  
+Default: `''`  
+
+The template text.
+
+
+#### data
+
+Type: `Object`  
+Default: `{}`  
+
+The data object used to populate the text.
+
+
 ## Usage
 
 ```javascript
@@ -25,8 +45,6 @@ gulp.src('./foo/*.js')
 
 
 //
-
-
 var pkg = require('./package.json');
 var banner = ['/**',
   ' * <%= pkg.name %> - <%= pkg.description %>',
@@ -36,30 +54,16 @@ var banner = ['/**',
   ' */',
   ''].join('\n');
 
+//passing in the text
 gulp.src('./foo/*.js')
   .pipe(footer(banner, { pkg : pkg } ))
   .pipe(gulp.dest('./dist/')
 
-gulp.src('./foo/*.js')
-  .pipe(footer.fromFile('banner.js', { pkg : pkg } ))
-  .pipe(gulp.dest('./dist/')
+//reading from a file for the text
+var bannerText = fs.readFileSync('banner.js');
+
+/*********************************************/
+//If you want the text from a file...
+var fs = require('fs');
+var banner = fs.readFileSync('banner.txt');
 ```
-
-## API
-
-### footer(text, data)
-
-#### text
-
-Type: `String`  
-Default: `''`  
-
-The template text.
-
-
-#### data
-
-Type: `Object`  
-Default: `{}`  
-
-The data object used to populate the text.
