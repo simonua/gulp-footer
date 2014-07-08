@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/godaddy/gulp-footer.git"
+    "url": "git://github.com/tracker1/gulp-footer.git"
   },
   "keywords": [
     "footer",
@@ -21,14 +21,14 @@
     "eventstream"
   ],
   "author": {
-    "name": "GoDaddy.com",
-    "url": "http://github.com/godaddy"
-  },
-  "contributors": [
-    {
       "name": "Michael J. Ryan",
       "email": "mxryan@godaddy.com",
       "url": "http://github.com/tracker1"
+  },
+  "contributors": [
+    {
+      "name": "GoDaddy.com",
+      "url": "http://github.com/godaddy"
     },
     {
       "name": "Douglas Duteil",
@@ -38,7 +38,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/godaddy/gulp-footer/issues"
+    "url": "https://github.com/tracker1/gulp-footer/issues"
   },
   "dependencies": {
     "event-stream": "*",
