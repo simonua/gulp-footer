@@ -1,3 +1,5 @@
+The canonical location of this project is now [tracker1/gulp-footer](https://github.com/tracker1/gulp-footer).
+
 # gulp-footer [![NPM version](https://badge.fury.io/js/gulp-footer.png)](http://badge.fury.io/js/gulp-footer) [![Build Status](https://travis-ci.org/tracker1/gulp-footer.png)](https://travis-ci.org/tracker1/gulp-footer)
 
 gulp-footer is a Gulp extension to add a footer to file(s) in the pipeline.  [Gulp is a streaming build system](https://github.com/gulpjs/gulp) utilizing [node.js](http://nodejs.org/).
