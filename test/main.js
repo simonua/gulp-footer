@@ -4,14 +4,14 @@
 
 var footer = require('../');
 var should = require('should');
-var gutil = require('gulp-util');
+var Vinyl = require('vinyl');
 require('mocha');
 
 describe('gulp-footer', function() {
   var fakeFile;
 
   function getFakeFile(fileContent){
-    return new gutil.File({
+    return new Vinyl({
       path: './test/fixture/file.js',
       cwd: './test/',
       base: './test/fixture/',

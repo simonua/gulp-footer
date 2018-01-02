@@ -42,11 +42,14 @@
   },
   "dependencies": {
     "event-stream": "*",
-    "gulp-util": "*",
-    "lodash.assign": "*"
+    "lodash._reescape": "^3.0.0",
+    "lodash._reevaluate": "^3.0.0",
+    "lodash.assign": "*",
+    "lodash.template": "^3.6.2"
   },
   "devDependencies": {
     "mocha": "*",
-    "should": "*"
+    "should": "*",
+    "vinyl": "^0.5.3"
   }
 }
