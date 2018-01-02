@@ -1,3 +1,5 @@
+//The following content is a 1-1 copy of gulp-util@3.0.8/lib/template.js to preserve full compatibility after the removal of gulp-util.
+
 var template = require('lodash.template');
 var reEscape = require('lodash._reescape');
 var reEvaluate = require('lodash._reevaluate');
